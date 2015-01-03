@@ -1,8 +1,8 @@
 $ = window.jQuery;
 
 $(function(){
-  $.get("https://raw.githubusercontent.com/gstack/bars-backgrounds/master/bgs.txt", function (data) {
-    var imgs = mgs = data.split("\n").map(function(x) { return "https://raw.githubusercontent.com/gstack/bars-backgrounds/master/"+x; });
+  $.get("https://raw.githubusercontent.com/g00nsquad/atom-bgswitcher/master/list.txt", function (data) {
+    var imgs = mgs = data.split("\n").map(function(x) { return "https://raw.githubusercontent.com/g00nsquad/atom-bgswitcher/master/list.txt"+x; });
     console.log('loaded background images');
     console.dir(imgs);
     $("body").bgswitcher({
